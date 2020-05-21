@@ -10,17 +10,17 @@
       {
         "id": 2,
         "title": "CSS3",
-        "percent": 50
+        "percent": 70
       },
       {
         "id": 3,
         "title": "JavaScript",
-        "percent": 80
+        "percent": 60
       },
       {
         "id": 4,
         "title": "jQuery и Vue.js",
-        "percent": 80
+        "percent": 60
       }
     ]
   },
@@ -30,7 +30,7 @@
       {
         "id": 5,
         "title": "GIT",
-        "percent": 30
+        "percent": 70
       },
       {
         "id": 6,
@@ -40,12 +40,12 @@
       {
         "id": 7,
         "title": "Gulp",
-        "percent": 45
+        "percent": 55
       },
       {
         "id": 8,
         "title": "Webpack",
-        "percent": 70
+        "percent": 65
       }
     ]
   }
