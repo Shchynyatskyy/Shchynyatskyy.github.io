@@ -13,15 +13,15 @@ html(lang="ru")
         .welcome-section
           section.parallax
               #scene
-                .layer(data-depth='0.0')
+                .layer(data-depth='0.05')
                   +image("parallax/1.jpg" , "parallax__img")
                 .layer(data-depth='0.1')
                   +image("parallax/2.png" , "parallax__img")
-                .layer(data-depth='0.8')
+                .layer(data-depth='0.99')
                   +image("parallax/3.png" , "parallax__img")
                 .layer(data-depth='0.45')
                   +image("parallax/4.png" , "parallax__img")
-                .layer(data-depth='0.15')
+                .layer(data-depth='0.25')
                   +image("parallax/5.png" , "parallax__img")
                 .layer(data-depth='0.2')
                   +image("parallax/6.png" , "parallax__img")
@@ -111,8 +111,8 @@ html(lang="ru")
             polygon(points="0,0 1000,0 1000,100")
           svg(viewBox="0 0 1000 100" preserveAspectRatio="none").triangles__shape.triangles__shape_right
             polygon(points="0,0 0,100 1000,0")
-        .down-section
-          .down-section__bg
+        .bottom-section
+          .bottom-section__bg
             +image("bg/budda.jpg" , "bg__img")
         section.contacts
           .container.contacts__container
@@ -125,8 +125,8 @@ html(lang="ru")
                   .form__row
                     - 
                       var fields = [
-                        ['user', 'Введите ваше имя', 'Ковальчук Дмитрий'],
-                        ['envelope', 'Введите ваш email', 'loftschool@study.com'],
+                        ['user', 'Введите ваше имя', 'Иванов Иван'],
+                        ['envelope', 'Введите ваш email', 'yourmail@gmail.com'],
                       ]
                     each item in fields
                       label.form-block(data-title=item[1])
@@ -172,7 +172,7 @@ html(lang="ru")
               .footer__data-col
                 .text-quote
                   .text-quote__text
-                    p Всегда пишите код так, будто сопровождать его будет склонный к насилию психопат, который знает где вы живете 
-                  .text-quote__author Martin Golding
+                    p «Если над кодом работали 20 человек, значит его можно сделать в 20 раз меньше и в 20 раз быстрее» 
+                  .text-quote__author Bjarne Stroustrup
                   
     include ./templates/entry.pug
